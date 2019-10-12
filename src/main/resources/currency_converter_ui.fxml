@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Controller"
+      prefHeight="400.0" prefWidth="600.0">
+    <HBox prefWidth="NaN" alignment="CENTER" spacing="10">
+        <TextField maxWidth="100" maxHeight="50" fx:id="gbpInput"/>
+        <Text text="GBP" />
+    </HBox>
+    <HBox prefWidth="NaN" alignment="CENTER" spacing="10">
+        <Text fx:id="eurResult" />
+        <Text text="EUR" />
+    </HBox>
+    <HBox prefWidth="NaN" alignment="CENTER" spacing="10">
+        <Text fx:id="usdResult" />
+        <Text text="USD" />
+    </HBox>
+    <Button text="convert" prefWidth="Infinity" alignment="CENTER" onAction="#convertCurrency" />
+</VBox>
